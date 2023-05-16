@@ -1,87 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Noto+Sans+KR&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
+img {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	height: 100vh;
-	background-color: #a6d0dd;
+	background-image: url(/images/bg.jpg);
+}
+
+header {
+	padding: 1rem 0;
+	width: 30%;
+	margin: auto;
+	background-color: white;
+}
+
+header img {
+	position: absolute;
+	right: 2%;
+	top: 25%;
+	width: 20%;
+	height: 50%;
+}
+header h1 {
+	font-size: 3.5rem;
+}
+
+header span {
+	font-size: 3rem;
+}
+
+header h1,
+header span {
+	display: block;
+	text-align: center;
+	font-family: 'Darumadrop One', cursive;
 }
 
 .top-guide {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	position: absolute;
-	left: 50%;
-	top: 5%;
-	transform: translate(-50%);
-	width: 77%;
+	left: 10%;
+	top: 19%;
+	width: 65%;
 	height: 5%;
 }
 
 .top-guide > div {
-	width: 20%;
+	width: 5%;
 	text-align: center;
+	background-color: white;
 }
 
 .side-guide {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	position: absolute;
-	top: 50%;
+	top: 23%;
 	left: 5%;
-	transform: translateY(-50%);
 	width: 5%;
 	height: 70%;
 }
 .side-guide > div {
 	display: flex;
 	align-items: center;
-	height: 25%;
+	justify-content: center;
+	height: 10%;
+	width: 40%;
+	background-color: white;
 }
 
-.memory-game {
+.top-guide p,
+.side-guide p {
+	font-size: 40px;
+	font-family: 'Darumadrop One', cursive;
+}
+
+.game-board {
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
 	justify-content: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 80%;
-	height: 70%;
+	gap: 0.5rem;
+	top: 25%;
+	left: 5%;
+	width: 75%;
+	height: 68%;
 }
 
-.memory-card {
+.card {
 	position: relative;
-	width: 19%;
-	height: 25%;
-	margin: 2px;
+	width: 17%;
+	height: 18%;
+	perspective: 500px;
 	cursor: pointer;
 }
 
-.card-front,
-.card-back {
+.content {
 	position: absolute;
-	background-color: #ffd3b0;
 	width: 100%;
-	height: 100%;
-	border-radius: 15px;
+	height: auto;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+}
+.content.flip {
+	transform: rotateY(180deg);
+	transition: transform 0.5s;
 }
 
-.card-front span {
+front,
+.back {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 5rem;
-	color: #ff6969;
+	height: 100%;
+	width: 100%;
+	background: white;
+	color: #03446a;
+	font-size: 40px;
+	text-align: center;
+
+	backface-visibility: hidden;
 }
 
-.card-back {
-	display: none;
+.back {
+	top: 0;
+	background: #03446a;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.back p {
+	padding: 4rem 0 0 0;
+	user-select: none;
 }

@@ -6,188 +6,274 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="memoryGameApp.css">
-    <title>Document</title>
+    <title>Awesome English | Card Game</title>
 </head>
 
 <body>
 
     <script src="memoryGameApp.js" defer></script>
     <div class="top-guide">
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-        <div>D</div>
-        <div>E</div>
+        <div>
+            <p>A</p>
+        </div>
+        <div>
+            <p>B</p>
+        </div>
+        <div>
+            <p>C</p>
+        </div>
+        <div>
+            <p>D</p>
+        </div>
+        <div>
+            <p>E</p>
+        </div>
     </div>
     <div class="side-guide">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-    </div>
-    <div class="memory-game">
-        <!-- replace all card fronts with an image -->
-        <div class="memory-card">
-            <div class="card-front">
-                <span>A</span>
-            </div>
-            <div class="card-back">
-                <p>Tuna</p>
-            </div>
+        <div>
+            <P>1</P>
         </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>B</span>
-            </div>
-            <div class="card-back">
-                <p>Tuna</p>
-            </div>
+        <div>
+            <P>2</P>
         </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>C</span>
-            </div>
-            <div class="card-back">
-                <p>fish</p>
-            </div>
+        <div>
+            <P>3</P>
         </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>D</span>
-            </div>
-            <div class="card-back">
-                <p>fish</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>E</span>
-            </div>
-            <div class="card-back">
-                <p>apple</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>F</span>
-            </div>
-            <div class="card-back">
-                <p>apple</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>G</span>
-            </div>
-            <div class="card-back">
-                <p>pie</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>H</span>
-            </div>
-            <div class="card-back">
-                <p>pie</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>I</span>
-            </div>
-            <div class="card-back">
-                <p>peanut</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>J</span>
-            </div>
-            <div class="card-back">
-                <p>peanut</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>K</span>
-            </div>
-            <div class="card-back">
-                <p>butter</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>L</span>
-            </div>
-            <div class="card-back">
-                <p>butter</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>M</span>
-            </div>
-            <div class="card-back">
-                <p>hot</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>N</span>
-            </div>
-            <div class="card-back">
-                <p>hot</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>O</span>
-            </div>
-            <div class="card-back">
-                <p>chocolate</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>P</span>
-            </div>
-            <div class="card-back">
-                <p>chocolate</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>Q</span>
-            </div>
-            <div class="card-back">
-                <p>car</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>R</span>
-            </div>
-            <div class="card-back">
-                <p>car</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>S</span>
-            </div>
-            <div class="card-back">
-                <p>seat</p>
-            </div>
-        </div>
-        <div class="memory-card">
-            <div class="card-front">
-                <span>T</span>
-            </div>
-            <div class="card-back">
-                <p>seat</p>
-            </div>
+        <div>
+            <P>4</P>
         </div>
     </div>
+    <header>
+        <h1>Henry and Mudge</h1>
+        <span>pg 5-6</span>
+        <img src="/images/puddleTrouble.jpg" alt="">
+    </header>
+    <div class="game-board">
+
+        <!-------------cardsStart------------>
+
+        <!-- set one -->
+        <div class="card">
+            <div class="content" data-match="setOne">
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>melted</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match="setOne">
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>녹은 것</p>
+                </div>
+            </div>
+        </div>
+        <!-- set two -->
+        <div class="card">
+            <div class="content" data-match='setTwo'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>outside</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setTwo'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>밖의</p>
+                </div>
+            </div>
+        </div>
+        <!-- set three -->
+        <div class="card">
+            <div class="content" data-match='setThree'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>stay</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setThree'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>머무르다</p>
+                </div>
+            </div>
+        </div>
+        <!-- set four -->
+        <div class="card">
+            <div class="content" data-match='setFour'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>ride</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setFour'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>타다</p>
+                </div>
+            </div>
+        </div>
+        <!-- set five -->
+        <div class="card">
+            <div class="content" data-match='setFive'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>bike</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setFive'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>자전거</p>
+                </div>
+            </div>
+        </div>
+        <!-- set six -->
+        <div class="card">
+            <div class="content" data-match='setSix'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>chewing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setSix'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>씹는</p>
+                </div>
+            </div>
+        </div>
+        <!-- set seven -->
+        <div class="card">
+            <div class="content" data-match='setSeven'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>glad</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setSeven'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>기쁜</p>
+                </div>
+            </div>
+        </div>
+        <!-- set eight -->
+        <div class="card">
+            <div class="content" data-match='setEight'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>warmer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setEight'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>온열 장치</p>
+                </div>
+            </div>
+        </div>
+        <!-- set nine -->
+        <div class="card">
+            <div class="content" data-match='setNine'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>stick</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setNine'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>막대</p>
+                </div>
+            </div>
+        </div>
+        <!-- set ten -->
+        <div class="card">
+            <div class="content" data-match='setTen'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>all the time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content" data-match='setTen'>
+                <div class="front">
+                    <img src="/images/aweLogo.jpeg" alt="">
+                </div>
+                <div class="back">
+                    <p>항상</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------cardsEnd------------>
     </div>
 </body>
 
