@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.content');
+const cardBack = document.querySelectorAll('.back');
 const deck = document.querySelectorAll('.card');
 
 let hasFlippedCard = false;
@@ -32,8 +33,13 @@ function checkForMatch() {
 function disableCards() {
 	firstCard.removeEventListener('click', flipCard);
 	secondCard.removeEventListener('click', flipCard);
+
 	resetBoard();
 }
+
+// function changeColor() {
+// 	cardBack.style.background = 'red';
+// }
 
 function unFlipCards() {
 	lockBoard = true;

@@ -13,7 +13,9 @@ img {
 
 body {
 	height: 100vh;
-	background-image: url(/images/bg.jpg);
+	background: #525252; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3d72b4, #525252); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header {
@@ -23,13 +25,6 @@ header {
 	background-color: white;
 }
 
-header img {
-	position: absolute;
-	right: 2%;
-	top: 25%;
-	width: 20%;
-	height: 50%;
-}
 header h1 {
 	font-size: 3.5rem;
 }
@@ -50,14 +45,15 @@ header span {
 	justify-content: space-around;
 	align-items: center;
 	position: absolute;
-	left: 10%;
-	top: 19%;
-	width: 65%;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%);
+	width: 75%;
 	height: 5%;
 }
 
 .top-guide > div {
-	width: 5%;
+	width: 4%;
 	text-align: center;
 	background-color: white;
 }
@@ -68,8 +64,9 @@ header span {
 	justify-content: space-around;
 	align-items: center;
 	position: absolute;
-	top: 23%;
-	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10%;
 	width: 5%;
 	height: 70%;
 }
@@ -80,6 +77,13 @@ header span {
 	height: 10%;
 	width: 40%;
 	background-color: white;
+}
+
+.side-guide > div,
+.top-guide > div {
+	box-shadow: 10px 6px 20px 0px rgba(56, 56, 56, 0.75);
+	-webkit-box-shadow: 10px 6px 20px 0px rgba(56, 56, 56, 0.75);
+	-moz-box-shadow: 10px 6px 20px 0px rgba(56, 56, 56, 0.75);
 }
 
 .top-guide p,
@@ -94,8 +98,9 @@ header span {
 	position: absolute;
 	justify-content: center;
 	gap: 0.5rem;
-	top: 25%;
-	left: 5%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 75%;
 	height: 68%;
 }
@@ -127,10 +132,13 @@ front,
 	width: 100%;
 	background: white;
 	color: #03446a;
-	font-size: 40px;
 	text-align: center;
-
 	backface-visibility: hidden;
+}
+
+.front > img,
+.back {
+	border-radius: 15px;
 }
 
 .back {
@@ -142,7 +150,8 @@ front,
 }
 
 .back p {
-	padding: 4rem 0 0 0;
+	font-size: 30px;
+	padding: 1.5rem 0 0 0;
 	user-select: none;
 }
 
