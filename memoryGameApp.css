@@ -13,9 +13,8 @@ img {
 
 body {
 	height: 100vh;
-	background: #525252; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #3d72b4, #525252); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
+		radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
 header {
@@ -46,9 +45,9 @@ header span {
 	align-items: center;
 	position: absolute;
 	left: 50%;
-	top: 5%;
+	top: 10%;
 	transform: translate(-50%);
-	width: 75%;
+	width: 65%;
 	height: 5%;
 }
 
@@ -64,8 +63,7 @@ header span {
 	justify-content: space-around;
 	align-items: center;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 18%;
 	left: 10%;
 	width: 5%;
 	height: 70%;
@@ -98,9 +96,9 @@ header span {
 	position: absolute;
 	justify-content: center;
 	gap: 0.5rem;
-	top: 50%;
+	top: 20%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%);
 	width: 75%;
 	height: 68%;
 }
@@ -130,28 +128,31 @@ front,
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: white;
-	color: #03446a;
 	text-align: center;
 	backface-visibility: hidden;
 }
 
 .front > img,
 .back {
-	border-radius: 15px;
+	border-radius: 1rem;
+	border: 3px solid black;
 }
 
 .back {
 	top: 0;
-	background: #03446a;
+	background: #c5b358;
 	font-family: 'Noto Sans KR', sans-serif;
 	color: white;
 	transform: rotateY(180deg);
 }
 
 .back p {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	font-size: 30px;
-	padding: 1.5rem 0 0 0;
+	text-shadow: 1px 4px 8px #080000;
 	user-select: none;
 }
 
@@ -174,7 +175,6 @@ front,
 	}
 
 	.back p {
-		padding: 2rem 0 0 0;
 		user-select: none;
 	}
 }
